@@ -68,7 +68,7 @@ class App extends Component{
 
   onButtonSubmit = () => {
     this.setState({ imageUrl: this.state.input });
-      fetch('postgres://vinayak_rathore07:NEbL4K2wiPWSeJTn4sdegzkTG3CEnps6@dpg-cg5ba2bhp8u9l20imja0-a/facerecogniton_db/imageurl',{
+      fetch('https://api.render.com/deploy/srv-cg425gqk728m6o3sn7gg?key=pG67TIQX4_c/imageurl',{
             method: 'post' , 
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify
@@ -83,7 +83,7 @@ class App extends Component{
         console.log(response); // Add this line to check the response object
         if(response){
 
-          fetch('postgres://vinayak_rathore07:NEbL4K2wiPWSeJTn4sdegzkTG3CEnps6@dpg-cg5ba2bhp8u9l20imja0-a/facerecogniton_db/image',{
+          fetch('https://api.render.com/deploy/srv-cg425gqk728m6o3sn7gg?key=pG67TIQX4_c',{
             method: 'put' , 
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify
