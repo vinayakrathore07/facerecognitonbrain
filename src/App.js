@@ -68,7 +68,7 @@ class App extends Component{
 
   onButtonSubmit = () => {
     this.setState({ imageUrl: this.state.input });
-      fetch('https://api.render.com/deploy/srv-cg425gqk728m6o3sn7gg?key=pG67TIQX4_c/imageurl',{
+      fetch('https://facerecognitonbrain-api.onrender.com/imageurl',{
             method: 'post' , 
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify
