@@ -23,7 +23,7 @@ class Register extends React.Component {
 	}
 
 	onSubmitSignIn = () => {
-		fetch('https://localhost:3000/register',
+		fetch('postgres://vinayak_rathore07:NEbL4K2wiPWSeJTn4sdegzkTG3CEnps6@dpg-cg5ba2bhp8u9l20imja0-a/facerecogniton_db/register',
 		{
 			method: 'post' , 
 			headers: {'Content-Type': 'application/json'},
