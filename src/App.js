@@ -10,6 +10,12 @@ import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Rank from './components/Rank/Rank';
 import './App.css';
 
+window.process = {
+   env: {
+         NODE_ENV: 'development'
+         }
+}
+
 
 const initialState ={
    input: '',
@@ -67,7 +73,7 @@ class App extends Component{
   }
 
   onButtonSubmit = () => {
-    this.setState({ imageUrl: this.state.input });
+    this.setState({imageUrl: this.state.input });
       fetch('https://facerecognitonbrain-api.onrender.com/imageurl',{
             method: 'post' , 
             headers: {'Content-Type': 'application/json'},
@@ -80,7 +86,7 @@ class App extends Component{
        .then(response => response.json())
        
        .then(response=> {
-        console.log(response); // Add this line to check the response object
+       
         if(response){
 
           fetch('https://facerecognitonbrain-api.onrender.com/image',{
