@@ -89,7 +89,7 @@ class App extends Component{
        
         if(response){
 
-          fetch('https://facerecognitonbrain-api.onrender.com/image',{
+          fetch('https://facerecognitonbrain-api.onrender.com.com/image',{
             method: 'put' , 
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify
